@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tooted>
+  <toode>
+    <nimetus>muruniiduk</nimetus>
+    <kirjeldus>Väga lahe aparaat</kirjeldus>
+  </toode>
+  <toode>
+    <nimetus>traktor</nimetus>
+    <kirjeldus>Põrr põrr põrr</kirjeldus>
+  </toode>
+</tooted>
