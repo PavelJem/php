@@ -9,6 +9,7 @@ if(!empty($_REQUEST['uusnimi'])){
     $kask->bind_param('s', $_REQUEST['uusnimi']);
     $kask->execute();
     header:("Location: $_SERVER[PHP_SELF]");
+     echo '<script>alert("Nimi on lisatud")</script>';
     //$yhendus->close();
 }
 ?>
