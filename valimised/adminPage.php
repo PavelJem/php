@@ -32,7 +32,7 @@ if(isset($_REQUEST["nulliks"])) {
     </head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <div id="menyy">
-    <h1>Valimisnimede haldus</h1>
+    <h1>Admin Page</h1>
     <?php
     //valimiste tabeli sisu vaatamine andmebaasist
     global $yhendus;

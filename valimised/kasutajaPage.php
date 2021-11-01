@@ -5,7 +5,7 @@ require ("../ab_phpLeht/conf.php");
         <title>Valimiste leht</title>
     </head>
     <body>
-    <h1>Valimiste leht+ kommenteerimine</h1>
+    <h1>Kasutaja Page</h1>
     <?php
     //valimiste tabeli sisu vaatamine andmebaasist
     global $yhendus;

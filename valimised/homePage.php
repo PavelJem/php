@@ -26,6 +26,25 @@ if(!empty($_REQUEST['uusnimi'])){
     <input type="submit" value="OK">
 </form>
 
+<?php
+//valimiste tabeli sisu vaatamine andmebaasist
+global $yhendus;
+$kask=$yhendus->prepare('
+    SELECT id, nimi, punktid FROM valimised WHERE avalik=1');
+$kask->bind_result($id, $nimi, $punktid);
+$kask->execute();
+echo "<table>";
+echo "<tr><th>Nimi</th>";
+
+while($kask->fetch()){
+    echo "<tr>";
+    echo "<td>".htmlspecialchars($nimi)."</td>";
+    echo "</tr>";
+}
+echo "</table>";
+?>
+<br>
 <li><a href="https://pjemeljanov.thkit.ee/phpLehestik/content/valimised/adminPage.php">Admin Page</a></li>
 <br>
 <li><a href="https://pjemeljanov.thkit.ee/phpLehestik/content/valimised/kasutajaPage.php">Kasutaja Page</a></li>
+</body>
